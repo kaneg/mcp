@@ -1,10 +1,12 @@
 # server.py
+import os
 from typing import Annotated
 from pydantic import Field
 
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("calculator")
+port = os.environ.get("PORT", 8000)
+mcp = FastMCP("calculator", port=port)
 
 
 @mcp.tool()
