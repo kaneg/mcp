@@ -8,5 +8,6 @@ dependencies = [
     "requests>=2.31.0",
     "soundfile",
     "sounddevice",
-    "kokoro-onnx"
+    "kokoro-onnx",
+    "fastmcp>=2.12.2",
 ]
