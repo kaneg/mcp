@@ -6,7 +6,7 @@ from pydantic import Field
 from mcp.server.fastmcp import FastMCP
 
 port = os.environ.get("PORT", 8000)
-mcp = FastMCP("calculator", port=port)
+mcp = FastMCP("calculator", port=port, streamable_http_path='/')
 
 
 @mcp.tool()
